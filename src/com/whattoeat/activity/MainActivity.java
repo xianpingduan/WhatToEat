@@ -6,6 +6,7 @@ import android.os.Handler;
 
 import com.whattoeat.R;
 
+
 public class MainActivity extends BaseActivity {
 
 	@Override

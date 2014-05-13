@@ -14,6 +14,12 @@ public interface ProtocolListener {
 		public static int ERROR_BAD_PACKET = 0x1001;
 		public static int ERROR_ACTION_FAIL = 0x1002;
 	}
+	
+	public static final class LOGIN_TYPE{
+		
+		public static int APP = 1;
+		public static int WEB = 0;
+	}
 
 	public interface AbstractNetListener {
 		public void onNetError(int errCode, String errorMsg);

@@ -56,6 +56,7 @@ public abstract class AbstractNetController {
 	 * @return 对应请求的服务器地址
 	 */
 	protected String getServerUrl() {
+		LogUtils.e("ServerUrl ="+ServerUrl.getServerUrlApp() + getRequestAction());
 		return ServerUrl.getServerUrlApp() + getRequestAction();
 	}
 

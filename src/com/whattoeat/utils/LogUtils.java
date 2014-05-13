@@ -36,7 +36,7 @@ public class LogUtils
     {}
 
     public static boolean allowD = false;
-    public static boolean allowE = false;
+    public static boolean allowE = true;
     public static boolean allowI = false;
     public static boolean allowV = false;
     public static boolean allowW = false;

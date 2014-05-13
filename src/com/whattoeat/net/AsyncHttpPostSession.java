@@ -67,9 +67,7 @@ public class AsyncHttpPostSession extends AsyncHttpSession {
 					if (httpEntity != null) {
 //						byte[] byteData = EntityUtils.toByteArray(httpEntity);
 						String data     =  EntityUtils.toString(httpEntity);
-						
-						LogUtils.e("data = "+data);
-
+						LogUtils.e("res data = "+data);
 						if (mCallBack != null)
 							mCallBack.onSucceed(data);
 					}

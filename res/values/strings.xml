@@ -3,5 +3,11 @@
 
     <string name="app_name">WhatToEat</string>
     <string name="action_settings">Settings</string>
+    
+    
+        <!-- 登录  -->
+    <string name="login_account_hint">请输入用户名</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="login">登录</string>
 
 </resources>

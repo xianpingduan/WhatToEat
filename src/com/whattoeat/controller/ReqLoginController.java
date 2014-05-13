@@ -9,6 +9,7 @@ import com.alibaba.fastjson.JSON;
 import com.whattoeat.controller.ProtocolListener.REQUST_ACTION_PATH;
 import com.whattoeat.controller.ProtocolListener.ReqLoginListener;
 import com.whattoeat.data.LoginInfo;
+import com.whattoeat.utils.LogUtils;
 
 public class ReqLoginController  extends AbstractNetController{
 
