@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <!--  分割线颜色 -->
+    <color name="main_divider_color">#d5d5d5</color>
+     <!--  导航栏背景颜色 -->
+    <color name="main_ab_bg_color">#eeeeee</color>
+     <!-- 按钮上文字颜色 -->
+    <color name="main_btn_text_color">#535353</color>
+     <!-- 按钮上文字选中颜色 -->
+    <color name="main_btn_text_selected_color">#0065cc</color>
+    <!-- 输入框边框颜色 ，食物分类cell边框颜色 -->
+    <color name="main_input_border_color">#cccccc</color>
+    <!-- 按钮背景颜色 -->
+    <color name="main_btn_bg_color">#428bca</color>
+     <!-- 按钮边框颜色 -->
+    <color name="main_btn_border_color">#357eba</color>
+    <!--  食物分类cell返回颜色-->
+    <color name="food_category_back_color">#fcfcfc</color>
+    <!--  食物分类cell文本颜色-->
+    <color name="food_category_text_color">#454545</color>
+</resources>
