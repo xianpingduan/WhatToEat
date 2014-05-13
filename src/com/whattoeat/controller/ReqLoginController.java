@@ -27,6 +27,7 @@ public class ReqLoginController  extends AbstractNetController{
 	
 	@Override
 	protected ArrayList<NameValuePair> getRequestBody() {
+		LogUtils.e("getRequestBody");
 		final  ArrayList<NameValuePair> arrayList= new ArrayList<NameValuePair>();
 		arrayList.add(new BasicNameValuePair("user_account",user_account));
 		arrayList.add(new BasicNameValuePair("user_pwd",user_pwd));

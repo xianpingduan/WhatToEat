@@ -1,5 +1,7 @@
 package com.whattoeat.net;
 
+import com.whattoeat.utils.LogUtils;
+
 import android.content.Context;
 import android.database.Cursor;
 import android.net.ConnectivityManager;
@@ -362,10 +364,13 @@ public class APNUtil {
 	 * 
 	 */
 	public static boolean isNetworkAvailable(Context context) {
+		LogUtils.e("isNetworkAvailable");
 		ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+		LogUtils.e("cm="+cm.toString());
 		if (cm == null)
 			return false;
 		NetworkInfo info = cm.getActiveNetworkInfo();
+		LogUtils.e("info="+info.toString());
 		if (info != null && info.isAvailable())
 			return true;
 		return false;

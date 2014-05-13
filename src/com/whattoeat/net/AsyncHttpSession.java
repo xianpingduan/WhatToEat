@@ -13,6 +13,7 @@ import org.apache.http.params.HttpParams;
 import android.util.Log;
 
 import com.whattoeat.App;
+import com.whattoeat.utils.LogUtils;
 
 public abstract class AsyncHttpSession implements Runnable {
 	public final String mUrl;
@@ -75,10 +76,13 @@ public abstract class AsyncHttpSession implements Runnable {
 
 	@Override
 	public void run() {
+		LogUtils.e("run");
+		LogUtils.e(""+APNUtil.isNetworkAvailable(App.getAppContext()));
 		if (APNUtil.isNetworkAvailable(App.getAppContext()) == false) {
 			if (mCallBack != null)
 				mCallBack.onError(HttpSessionConstant.ERROR_CODE.ERR_NETWORK_DISABLE, "ahs net work error");
 		} else {
+			LogUtils.e("doRun");
 			doRun();
 		}
 	}

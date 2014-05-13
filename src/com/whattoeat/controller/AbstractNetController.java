@@ -88,6 +88,7 @@ public abstract class AbstractNetController {
 		public void onSucceed(String rspData) {
 			try {
 				JSONObject object = new JSONObject(rspData);
+				LogUtils.e("object="+object.toString());
 				int resCode = object.getInt("code");
 				if (resCode>=0&&resCode <= 200) {
 					handleResponseBody(object.getString("data"));
@@ -103,7 +104,9 @@ public abstract class AbstractNetController {
 
 		@Override
 		public void onError(int errCode, String strErr) {
+			LogUtils.e("errCode="+errCode +"|"+strErr);
 			handleResponseError(errCode, strErr);
+
 		}
 	};
 

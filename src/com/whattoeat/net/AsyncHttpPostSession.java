@@ -32,11 +32,13 @@ public class AsyncHttpPostSession extends AsyncHttpSession {
 	}
 
 	public void doPost(ArrayList<NameValuePair> requestData) {
+		LogUtils.e("doPost");
 		mRequestData = requestData;
 		createPost();
 	}
 
 	private void createPost() {
+		LogUtils.e("createPost");
 		AsyncHttpPostSessionManager.getInstance().submit(this);
 	}
 
@@ -48,6 +50,7 @@ public class AsyncHttpPostSession extends AsyncHttpSession {
 
 	@Override
 	protected void doRun() {
+		LogUtils.e("send request");
 		while (mHasRetry < HttpSessionConstant.MAX_RETRY.POST_DATA) {
 			try {
 				HttpClient httpClient = getHttpClient();
